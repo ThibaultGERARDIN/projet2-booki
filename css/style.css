@@ -120,8 +120,11 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
+header {
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
