@@ -19,19 +19,21 @@
         <header>
             <img src="./images/logo/Booki.png" id="logo-petit">
             <div class="header-links">
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
+                <a href="#hebergements">Hébergements</a>
+                <a href="#activities">Activités</a>
             </div>
         </header>
         <main>
             <div class="info-group">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p> En plein centre-ville ou en pleine nature</p>
-                <div class="search-bar">
+                <form>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <!-- changer le fa-solid en autre class pour avoir le résultat voulu -->
                     <input type="search" name="rechercher-ville" id="rechercher-villep" placeholder="Marseille, France">
                     <button class="bouton-rechercher">Rechercher</button>
                     <!-- input type=button ou juste button comme j'ai mis ? -->
-                </div>
+                </form>
                 <div class="filtres">
                     <h2>Filtres</h2>
                     <button class="filtres-button" name="economique"><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i> Économique</button>
@@ -40,13 +42,13 @@
                     <button class="filtres-button" name="nos-pepites"><i class="fa-solid fa-fire" aria-hidden="true"></i> Nos pépites</button>
                 </div>
                 <div class="infobar">
-                    <i class="fa-solid fa-info-circle" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville
+                    <i class="fa-solid fa-circle-info" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville
                     <!-- créer une classe différente de fa-solid pour logo "transparent" -->
                 </div>
             </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <h1>Hébergements à Marseille</h1>
+                    <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <a href="#">
                             <article class="card">
@@ -230,10 +232,64 @@
                             </article>
                         </a>
                     </div>
-                </section>
+                </section>               
+            </div>
+            <div class="activities">          
+                <h2 class="section-title">Activités à Marseille</h2>
+                <div class="activities-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activities/reno-laithienne.jpg" alt="Image du Vieux-Port">
+                            <div class="card-content">
+                                    <h3 class="card-title">Vieux-Port</h3>  
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activities/paul-hermann.jpg" alt="Image du Fort de Pomègues">
+                            <div class="card-content">
+                                    <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">  
+                        <article class="card">
+                            <img src="./images/activities/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
+                            <div class="card-content">
+                                    <h3 class="card-title">Parc national des Calanques</h3>
+                            </div>
+                        </article>
+                    </a>  
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activities/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
+                            <div class="card-content">
+                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </article>
+                    </a>
+                </div>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer-links">
+                <h2 class="footer-title">À propos</h2>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales</a>
+                <a href="#">Données et confidentialité</a>
+            </div>
+            <div class="footer-links">
+                <h2 class="footer-title">Nos hébergements</h2>
+                <a href="#">Charte qualité</a>
+                <a href="#">Proposer votre hôtel</a>
+            </div>
+            <div class="footer-links">
+                <h2 class="footer-title">Assistance</h2>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
+            </div>
+        </footer>
     </div>
 </body>
 
