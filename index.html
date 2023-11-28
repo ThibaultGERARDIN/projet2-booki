@@ -18,31 +18,33 @@
     <div class="main-container">
         <header>
             <img src="./images/logo/Booki.png" class="logo-petit">
-            <div class="header-links">
-                <a href="#hebergements">Hébergements</a>
-                <a href="#activities">Activités</a>
-            </div>
+            <nav>
+                    <a href="#hebergements" class="header-links">Hébergements</a>
+                    <a href="#activities" class="header-links">Activités</a>
+            </nav>
         </header>
         <main>
             <div class="info-group">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p> En plein centre-ville ou en pleine nature</p>
+                <div class="headline">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
                 <form class="search-bar">
-                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                    <!-- changer le fa-solid en autre class pour avoir le résultat voulu -->
-                    <input type="search" name="rechercher-ville" id="recherche-ville" placeholder="Marseille, France">
+                    <div class="icone">
+                        <i class="fa-solid fa-location-dot black" aria-hidden="true"></i>
+                    </div>    
+                    <input type="search" name="rechercher-ville" class="recherche-ville" placeholder="Marseille, France">
                     <button class="bouton-rechercher">Rechercher</button>
-                    <!-- input type=button ou juste button comme j'ai mis ? -->
                 </form>
                 <div class="filtres">
-                    <h2>Filtres</h2>
-                    <button class="filtres-button" name="economique"><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i> Économique</button>
-                    <button class="filtres-button" name="familial"><i class="fa-solid fa-person" aria-hidden="true"></i> Familial</button>
-                    <button class="filtres-button" name="romantique"><i class="fa-solid fa-heart" aria-hidden="true"></i> Romantique</button>
-                    <button class="filtres-button" name="nos-pepites"><i class="fa-solid fa-fire" aria-hidden="true"></i> Nos pépites</button>
+                    <h2 class="sous-titre">Filtres</h2>
+                    <button class="filtres-button" name="economique"><i class="fa-solid fa-money-bill-wave big-icone" aria-hidden="true"></i> Économique</button>
+                    <button class="filtres-button" name="familial"><i class="fa-solid fa-person big-icone" aria-hidden="true"></i> Familial</button>
+                    <button class="filtres-button" name="romantique"><i class="fa-solid fa-heart big-icone" aria-hidden="true"></i> Romantique</button>
+                    <button class="filtres-button" name="nos-pepites"><i class="fa-solid fa-fire big-icone" aria-hidden="true"></i> Nos pépites</button>
                 </div>
                 <div class="infobar">
-                    <i class="fa-solid fa-circle-info" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville
+                    <i class="fa-solid fa-info circle" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville
                     <!-- créer une classe différente de fa-solid pour logo "transparent" -->
                 </div>
             </div>
@@ -170,8 +172,8 @@
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2> <!-- Pourquoi c'est un h2 et pas un h1 ? -->
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i> 
+                        <h2 class="section-title">Les plus populaires</h2> 
+                        <i class="fa-solid fa-chart-line big-icone" aria-hidden="true"></i> 
                     </div>
                     <div class="populaires-cards">
                         <a href="#">
@@ -274,18 +276,18 @@
         </main>
         <footer>
             <div class="footer-links">
-                <h2 class="footer-title">À propos</h2>
+                <h2 class="sous-titre">À propos</h2>
                 <a href="#">Fonctionnement du site</a>
                 <a href="#">Conditions générales</a>
                 <a href="#">Données et confidentialité</a>
             </div>
             <div class="footer-links">
-                <h2 class="footer-title">Nos hébergements</h2>
+                <h2 class="sous-titre">Nos hébergements</h2>
                 <a href="#">Charte qualité</a>
                 <a href="#">Proposer votre hôtel</a>
             </div>
             <div class="footer-links">
-                <h2 class="footer-title">Assistance</h2>
+                <h2 class="sous-titre">Assistance</h2>
                 <a href="#">Centre d'aide</a>
                 <a href="#">Nous contacter</a>
             </div>
