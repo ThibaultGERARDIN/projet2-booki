@@ -14,6 +14,7 @@
 }
 
 header {
+    margin-top: 2px;
     display:flex ;
     height: 79px;
     width: 100%;
@@ -81,6 +82,7 @@ p {
 }
 
 body {
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +183,6 @@ a {
     background-color: #FFFFFF;
     width: 377px;
     height: 49px;
-    box-sizing: border-box;
 }
 
 .black {
@@ -196,7 +197,7 @@ a {
     font-size: 18px;
     background-color: #F2F2F2;
     padding: 0px 18px 0px 18px;
-    height: 49px;
+    height: 100%;
     border: solid 1px #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     box-sizing: border-box;
@@ -215,7 +216,6 @@ input::placeholder {
     border: none;
     width: 100%;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .bouton-rechercher {
@@ -232,7 +232,6 @@ input::placeholder {
     font-weight: 700;
     color: white;
     gap: 10px;
-    box-sizing: border-box;
 }
 
 .filtres {
@@ -299,20 +298,25 @@ input::placeholder {
     width: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 30px;
+}
+
+.hebergements > *{
+    flex: 1 1 0;
 }
 
 .hebergements-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 30px;
+}
+
+.hebergements-cards > * {
+    flex: 1 1 0;
 }
 
 .hebergements-cards .card {
     display: flex;
-    width: 250px;
     height: 207px;
     flex-direction: column;
     box-sizing: border-box;
@@ -450,6 +454,7 @@ input::placeholder {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
@@ -468,21 +473,25 @@ input::placeholder {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 20px;
     }
 
-    .populaires-cards a {
-        width: 30%;
+    .hebergements-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
     }
 
-    .populaires-cards .card-title {
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-subtitle {
         font-size: 14px;
     }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
 }
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
