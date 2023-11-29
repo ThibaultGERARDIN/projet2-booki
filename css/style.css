@@ -18,13 +18,13 @@ header {
     height: 79px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: top;
+    align-items: start;
     gap: 10px;
 }
 
 .logo-petit {
     height: 19px;
-    padding: 30px 0px 30px 0px;
+    padding: 30px 50px 30px 50px;
 }
 
 h1 {
@@ -36,6 +36,7 @@ h1 {
 .sous-titre {
     font-size: 18px;
     font-weight: 700;
+    margin: 0px;
 }
 
 .card-title {
@@ -47,7 +48,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: bottom;
+    align-items: end;
     width: 244px;
     height: 35px;
     padding: 0px 50px 0px 50px;
@@ -59,12 +60,13 @@ p {
     font-size: 16px;
     font-weight: 400;
 }
+
 .header-links {
     display: flex;
     flex-direction: column;
     justify-content: end;
     height: 35px;
-    border: solid 2px #F2F2F2 0%;
+    border: transparent 2px;
 }
 
 .header-links:hover {
@@ -78,23 +80,26 @@ p {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 0px, 50px, 0px, 50px;
+    gap: 30px;
 }    
 
 footer {
     display: flex;
-    padding: 30px;
     flex-direction: row;
-    justify-content: left;
-    gap: 250px;
+    justify-content: space-between;
     background-color: var(--main-bg-color);
 }
 
 .footer-links {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    gap: 10px;
+    justify-content: flex-start;
+    align-items: left;
+    gap: 15px;
+    padding: 20px;
 }
 
 .main-container {
@@ -147,7 +152,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: left;
     gap: 35px;
 }
 
@@ -155,7 +159,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: left;
     gap: 8px;
 }
 
@@ -171,6 +174,11 @@ a {
     height: 49px;
 }
 
+.black {
+    color: black;
+}
+
+
 .icone {
     display: flex;
     align-items: center;
@@ -184,6 +192,8 @@ a {
 }
 
 input::placeholder {
+    font-size: 18px;
+    font-weight: 700;
     color: black;
     opacity: 1;
 }
@@ -192,9 +202,7 @@ input::placeholder {
     display: flex;
     height: 49px;
     border: none;
-    width: fit-content;
-    font-size: 18px;
-    font-weight: 700;
+    width: 100%;
     text-align: center;
 }
 
@@ -203,7 +211,6 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     background-color: #0065FC;
-    border: none;
     height: 49px;
     border-radius: 0px 15px 15px 0px;
     border: solid #0065FC 1px;
@@ -213,10 +220,6 @@ input::placeholder {
     font-weight: 700;
     color: white;
     gap: 10px;
-}
-
-.black {
-    color: black;
 }
 
 .filtres {
@@ -243,7 +246,7 @@ input::placeholder {
     border: solid 2px #D9D9D9;
 }
 
-.filtres-button:hover {
+.filtres-button:active {
     background-color: #DEEBFF;
 }
 
@@ -268,13 +271,13 @@ input::placeholder {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
+    gap: 30px;
     box-sizing: border-box;
 }
 
