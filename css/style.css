@@ -145,12 +145,9 @@ a {
     object-fit: cover;
 }
 
-.card-title {
-    font-size: 16px;
-}
-
 .euro {
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .neutral-star {
@@ -319,6 +316,8 @@ input::placeholder {
     display: flex;
     height: 207px;
     flex-direction: column;
+    gap: 4px;
+    padding: 0px 0px 15px 0px;
     box-sizing: border-box;
 }
 
@@ -327,6 +326,8 @@ input::placeholder {
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border: solid 5px white;
+    box-sizing: border-box;
 }
 
 .hebergements-cards .card-content {
@@ -336,21 +337,23 @@ input::placeholder {
     flex-direction: column;
     justify-content: space-between;
     gap: 8px;
+    box-sizing: border-box;
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin: 0px;
 }
 
-.hebergements-cards .card-subtitle {
-    margin: 0;
+.card-subtitle {
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.hebergements-cards .card-rating {
-    margin-bottom: 5px;
+.card-rating {
+    margin: 0px;
+    height: fit-content;
+    font-size: 13px;
 }
-
 
 /****** Populaires ***********/
 .populaires {
@@ -364,9 +367,11 @@ input::placeholder {
 .populaires-cards {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 30px;
+}
 
+.populaires-cards > *{
+    flex: 1 1 0;
 }
 
 .populaires-title {
@@ -416,22 +421,26 @@ input::placeholder {
     flex-direction: column;
     padding: 30px;
     gap: 30px;
+}
 
+.activities > *{
+    flex: 1 1 0;
 }
 
 .activities-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 30px;
+}
+
+.activities-cards > *{
+    flex: 1 1 0;
 }
 
 .activities-cards .card {
     display: flex;
     flex-direction: column;
     padding: 0px;
-    height: 439px;
-    width: 297.5px;
 }
 
 .activities-cards img {
@@ -443,12 +452,16 @@ input::placeholder {
 
 .activities-cards .card-content {
     width: 100%;
-    padding-left: 15px;
+    padding: 20px 19px 20px 19px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
 }
 
+.activities .card-title {
+    margin: 0px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -491,6 +504,18 @@ input::placeholder {
     .card-subtitle {
         font-size: 14px;
     }
+
+    .activities-cards .card {
+        height: 270px;
+    }
+
+    .activities-cards img {
+        height: 200px;
+    }
+
+
+
+
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
