@@ -186,6 +186,10 @@ a {
     color: black;
 }
 
+.white {
+    color: white;
+}
+
 
 .icone {
     display: flex;
@@ -215,6 +219,18 @@ input::placeholder {
     text-align: center;
 }
 
+.bouton-loupe {
+    display: none;
+    height: 100%;
+    padding: 15px 16px 15px 16px;
+    background-color: #0065FC;
+    border-radius: 15px;
+    font-size: 17px;
+    border: solid 1px #0065FC;
+}
+
+
+
 .bouton-rechercher {
     display: flex;
     justify-content: center;
@@ -238,6 +254,20 @@ input::placeholder {
     align-items: center;
 }
 
+.four-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.two-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
 .filtres-button {
     display: flex;
     flex-direction: row;
@@ -255,7 +285,7 @@ input::placeholder {
     border: solid 2px #D9D9D9;
 }
 
-.filtres-button:active {
+.filtres-button:hover {
     background-color: #DEEBFF;
 }
 
@@ -496,7 +526,6 @@ input::placeholder {
         gap: 20px;
     }
 
-
     .card-title {
         font-size: 16px;
     }
@@ -513,11 +542,33 @@ input::placeholder {
         height: 200px;
     }
 
-
+    .filtres {
+        flex-direction: column;
+        align-items: start;
+    }
 
 
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
+    .bouton-loupe {
+        display: flex;
+    }
+
+    .bouton-rechercher {
+        display: none;
+    }
+
+    .four-buttons {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .filtres-button {
+        width: 165.5px;
+        font-size: 14px;
+        justify-content: flex-start;
+    }
+
 }
