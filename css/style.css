@@ -105,6 +105,7 @@ footer {
     align-items: left;
     gap: 15px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .main-container {
@@ -579,8 +580,7 @@ input::placeholder {
 @media (max-width: 767.98px) {
     
     header {
-        margin: 0;
-        padding: 0px 20px;
+        margin: 0px;
         height: 115px;
         gap: 0px;
         flex-direction: column;
@@ -588,13 +588,14 @@ input::placeholder {
     }
 
     .main-container {
-        padding: 0;
+        padding: 0px;
     }
 
     nav {
         gap: 0px;
         justify-content: space-around;
         width: 100%;
+        padding: 0px;
     }
 
     .info-group {
