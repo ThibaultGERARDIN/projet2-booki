@@ -15,7 +15,7 @@
 
 header {
     margin-top: 2px;
-    display:flex ;
+    display: flex;
     height: 79px;
     width: 100%;
     max-width: 1440px;
@@ -88,7 +88,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-}    
+}
 
 footer {
     display: flex;
@@ -102,7 +102,7 @@ footer {
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: left;
+    align-items: start;
     gap: 15px;
     padding: 20px;
     box-sizing: border-box;
@@ -212,7 +212,7 @@ input::placeholder {
     color: black;
     opacity: 1;
 }
-    
+
 .recherche-ville {
     display: flex;
     height: 49px;
@@ -220,7 +220,7 @@ input::placeholder {
     width: 100%;
     text-align: center;
     border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2 ;
+    border-bottom: solid 1px #F2F2F2;
     box-sizing: border-box;
 }
 
@@ -267,7 +267,7 @@ input::placeholder {
     align-items: center;
 }
 
-.four-buttons > * {
+.four-buttons>* {
     flex: 1 1 0;
 }
 
@@ -278,7 +278,7 @@ input::placeholder {
     align-items: center;
 }
 
-.two-buttons > * {
+.two-buttons>* {
     flex: 1 1 0;
 }
 
@@ -339,7 +339,7 @@ input::placeholder {
     gap: 30px;
 }
 
-.hebergements > *{
+.hebergements>* {
     flex: 1 1 0;
 }
 
@@ -349,7 +349,7 @@ input::placeholder {
     gap: 30px;
 }
 
-.hebergements-cards > * {
+.hebergements-cards>* {
     flex: 1 1 0;
 }
 
@@ -415,7 +415,7 @@ input::placeholder {
     gap: 30px;
 }
 
-.populaires-cards > *{
+.populaires-cards>* {
     flex: 1 1 0;
 }
 
@@ -468,7 +468,7 @@ input::placeholder {
     gap: 30px;
 }
 
-.activities > *{
+.activities>* {
     flex: 1 1 0;
 }
 
@@ -478,7 +478,7 @@ input::placeholder {
     gap: 30px;
 }
 
-.activities-cards > *{
+.activities-cards>* {
     flex: 1 1 0;
 }
 
@@ -576,9 +576,10 @@ input::placeholder {
     }
 
 }
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    
+
     header {
         margin: 0px;
         height: 115px;
@@ -654,7 +655,7 @@ input::placeholder {
         margin: 0px;
     }
 
-    .populaires-cards .hebergements-cards{
+    .populaires-cards .hebergements-cards {
         gap: 15px;
     }
 
